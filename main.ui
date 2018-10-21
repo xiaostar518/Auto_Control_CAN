@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="MainInpute">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>621</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="Inpute">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="Running">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="Report">
+     <attribute name="title">
+      <string>Page</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="Tool">
+     <attribute name="title">
+      <string>Page</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>640</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="Setting">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="action_can"/>
+    <addaction name="action_usb"/>
+    <addaction name="action_data"/>
+    <addaction name="action_serialport"/>
+    <addaction name="action_camera"/>
+    <addaction name="separator"/>
+    <addaction name="action_exit"/>
+   </widget>
+   <widget class="QMenu" name="Loading">
+    <property name="title">
+     <string>载入</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="Saving">
+    <property name="title">
+     <string>保存</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="About">
+    <property name="title">
+     <string>关于</string>
+    </property>
+   </widget>
+   <addaction name="Setting"/>
+   <addaction name="Loading"/>
+   <addaction name="Saving"/>
+   <addaction name="About"/>
+  </widget>
+  <action name="action_can">
+   <property name="text">
+    <string>can初始化</string>
+   </property>
+  </action>
+  <action name="action_usb">
+   <property name="text">
+    <string>usb初始化</string>
+   </property>
+  </action>
+  <action name="action_data">
+   <property name="text">
+    <string>数据采集卡初始化</string>
+   </property>
+  </action>
+  <action name="action_serialport">
+   <property name="text">
+    <string>串口初始化</string>
+   </property>
+  </action>
+  <action name="action_camera">
+   <property name="text">
+    <string>摄像头初始化</string>
+   </property>
+  </action>
+  <action name="action_exit">
+   <property name="text">
+    <string>exit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
